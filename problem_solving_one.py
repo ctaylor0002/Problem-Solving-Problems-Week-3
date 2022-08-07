@@ -36,3 +36,9 @@ def problem_three(data):
                 str_counter += 1
 
     return(send_data)
+
+def problem_four(word, reversed_word):
+    if reversed_word == word:
+        return True
+    else:
+        return False

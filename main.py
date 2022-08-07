@@ -1,4 +1,4 @@
-from problem_solving_one import problem_one, problem_three, problem_two
+from problem_solving_one import problem_one, problem_two, problem_three, problem_four
 
 #Reverse a string
 #I will be utilizing a function from problem_solving_one.py
@@ -22,6 +22,14 @@ print(f"{capitalize_send_data} capitalized is, {capitalize_return_data}")
 #If it is then I will add to the counter until it isnt then we will concat the counter as well as the letter.
 #Reset the counter and repeat. Also removing eacSh letter as we search for it
 
-compress_send_data = "aaabbbbbccccddddeeeedda"
+compress_send_data = "aaabbbbbccccddddeeeeddd"
 compress_return_data = problem_three(compress_send_data)
 print(f"{compress_send_data} compressed down is, {compress_return_data}")
+
+#Palidrome
+#This will be easy. I will just utilize the first function to reverse the string and then have a function to check if the two values are the same then return true or false.
+
+palidrome_send_data = input("Please input a palidrome. ")
+palidrome_first_step = problem_one(palidrome_send_data)
+palidrome_return_data = problem_four(palidrome_send_data, palidrome_first_step)
+print(palidrome_return_data)
